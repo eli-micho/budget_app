@@ -44,7 +44,8 @@ module.exports = {
     mode: 'development',
     devServer: {
         inline: true,
-        hot: true
+        hot: true,
+        open: true,
     },
     devtool: 'cheap-module-source-map',
     plugins: [
