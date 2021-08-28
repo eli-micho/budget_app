@@ -18,14 +18,14 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            plugins: [require.resolve('react-refresh/babel')]
-                        }
+                            plugins: [require.resolve('react-refresh/babel')],
+                        },
                     },
                 ],
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.(scss|css)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
@@ -34,12 +34,12 @@ module.exports = {
             {
                 test: /\.(woof(2)?|eot|ttf|otf|svg|)$/,
                 type: 'asset/inline',
-            }
-        ]
+            },
+        ],
     },
     output: {
         path: path.resolve(__dirname, './build'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     mode: 'development',
     devServer: {
@@ -53,8 +53,8 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.html'),
         }),
         new webpack.DefinePlugin({
-            'process.env.name': JSON.stringify('Elijah')
+            'process.env.name': JSON.stringify('Elijah'),
         }),
         new ReactRefreshWebpackPlugin(),
     ],
-}
+};
