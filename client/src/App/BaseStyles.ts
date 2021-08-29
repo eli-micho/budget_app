@@ -9,6 +9,7 @@ export default createGlobalStyle`
   body {
     -webkit-tap-highlight-color: transparent;
     line-height: 1.2;
+    font-family: 'Inter', sans-serif;
   }
   #root {
     display: flex;
@@ -19,6 +20,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   a {
+    cursor: pointer
     color: inherit;
     text-decoration: none;
   }
@@ -33,6 +35,7 @@ export default createGlobalStyle`
     font-weight: 600
   }
   button {
+    cursor: pointer;
     background: none;
     border: none;
   }

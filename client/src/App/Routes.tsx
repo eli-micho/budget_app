@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from '../Home/Home';
+import Landing from '../Landing/Landing';
 
 const Routes: React.FunctionComponent = () => {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={Landing} />
             </Switch>
         </Router>
     );

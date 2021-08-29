@@ -1,4 +1,3 @@
-import './App.scss';
 import BaseStyles from './BaseStyles';
 import NormalizeStyles from './NormalizeStyles';
 import Routes from './Routes';
