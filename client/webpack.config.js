@@ -43,6 +43,7 @@ module.exports = {
     },
     mode: 'development',
     devServer: {
+        historyApiFallback: true,
         inline: true,
         hot: true,
         open: true,

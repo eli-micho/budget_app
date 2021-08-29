@@ -1,9 +1,16 @@
 import './App.scss';
+import BaseStyles from './BaseStyles';
+import NormalizeStyles from './NormalizeStyles';
+import Routes from './Routes';
 
-export const App = () => {
+const App: React.FunctionComponent = () => {
     return (
-        <div className="app">
-            <h1>Hello World</h1>
-        </div>
+        <>
+            <BaseStyles />
+            <NormalizeStyles />
+            <Routes />
+        </>
     );
 };
+
+export default App;
