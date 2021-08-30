@@ -8,18 +8,18 @@ export const AuthFormContainer = styled.div`
     width: 450px;
     height: 500px;
     background-color: ${color.backgroundMedium};
-    border: 1px solid black;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
 `;
 
 export const LogoContainer = styled.div`
     color: ${color.secondary};
     display: flex;
+    flex: 2;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    padding: 5px 0;
 `;
 
 export const Logo = styled.span`
@@ -32,30 +32,48 @@ export const Logo = styled.span`
 
 export const LoginForm = styled.form`
     width: 100%;
+    padding: 5px 0;
     display: flex;
+    flex: 8;
     flex-direction: column;
     align-items: center;
     color: ${color.textDarkest};
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     background-color: ${color.secondary};
 `;
 
-export const AuthInput = styled.input`
-    padding: 0.5em;
-    margin: 1em;
-    background: #ffffff;
-    border: none;
+export const AuthLoginField = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
     border-bottom: 1px solid gray;
 `;
 
+export const AuthInput = styled.input`
+    display: inline-flex;
+    padding: 0.5em;
+    margin: 0.5em;
+    background: transparent;
+    border: none;
+`;
+
 export const AuthSocialMediaHeader = styled.div`
+    width: 100%;
     display: flex;
     margin: 5px 0;
+    padding-bottom: 10px;
 
     hr {
-        width: 100px;
+        width: 30%;
     }
+`;
+
+export const AuthSocialMediaContainer = styled.div`
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 `;
 
 export const AuthSocialMediaButton = styled.a`
